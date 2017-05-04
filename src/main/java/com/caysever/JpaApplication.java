@@ -30,15 +30,7 @@ public class JpaApplication {
 			fullTimeEmployee.setGender(GENDER.MALE);
 			fullTimeEmployee.setTotalWorkingHoursOfWeek(40);
 
-			PartTimeEmployee partTimeEmployee = new PartTimeEmployee();
-			partTimeEmployee.setName("Hale");
-			partTimeEmployee.setSurname("Mammedova");
-			partTimeEmployee.setBirthDay(new Date());
-			partTimeEmployee.setGender(GENDER.FEMALE);
-			partTimeEmployee.setHourlyWage(50.0f);
-
 			employeeRepository.save(fullTimeEmployee);
-			employeeRepository.save(partTimeEmployee);
 		};
 	}
 
